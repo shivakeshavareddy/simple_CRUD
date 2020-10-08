@@ -1,0 +1,12 @@
+<mat-toolbar class="toolBar_title">
+  <p>simple_CRUD</p>
+</mat-toolbar>
+
+<div class="user-container">
+  <div class="user-detail">
+    <app-user-details [users]="users"></app-user-details>
+  </div>
+  <div class="enter-detail">
+    <app-enter-details (selected)="saveUser($event)"></app-enter-details>
+  </div>
+</div>

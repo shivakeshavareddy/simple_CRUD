@@ -1,0 +1,13 @@
+<mat-card>
+  <mat-card-title> user details </mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item class="user-list" *ngFor="let item of users">
+        <h3 class="user-detail">{{ item.name }}</h3>
+        <button class="delete-button" mat-icon-button color="warn">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
